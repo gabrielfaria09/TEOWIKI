@@ -10,11 +10,27 @@ html{
   box-sizing: border-box;
 }
 
+#ProgressBar{
+  position: fixed;
+  top: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #f7efe6;
+  z-index: 999;
+}
+
+#RealProgress{
+  height: 100%;
+  background-color: #D4AF37;
+  border-radius: 5px;
+  width: 0%;
+}
+
 /*Estilização da barra de navegação principal*/
 
 nav{
   position: fixed;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 100%;
   min-height: 64px;
