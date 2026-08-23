@@ -18,16 +18,16 @@ nav{
   justify-content: center;
   gap: 2.5rem;
   background: linear-gradient(to right, #3b2416, #7a4b2b);
-  color: #f7efe6;
+  box-shadow: 0px 10px 60px  #D4AF37;
 }
 
 /*Estilização dos links da barra de navegação e dos demais links*/
 
 nav a:link,nav a:visited, aside a:link, aside a:visited, .Conteúdo a:link, .Conteúdo a:visited, .Complementos a:link, .Complementos a:visited {
-  color: sienna;
+  color: #F5E6D3;
   text-decoration:none;
   letter-spacing: 0.2rem;
-  text-shadow: 1px 1px snow, 2px 2px saddlebrown;
+  text-shadow: 2px 2px #D4AF37;
 }
 
 /*Estilização da logotipo presente na barra de navegação*/
@@ -40,7 +40,7 @@ nav a:link,nav a:visited, aside a:link, aside a:visited, .Conteúdo a:link, .Con
   align-items: center;
   justify-content: center;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  color: sienna;
+  color: #D4AF37;
 }
 
 /*Barra de navegação secundária presente nos artigos*/
@@ -72,7 +72,7 @@ aside{
 /*Estilização do fundo da página e do posicionamento dos itens*/
 
 body {
-  background: linear-gradient( #f8efe4 0%, antiquewhite 45%, #dec5a8 100%);
+  background: linear-gradient( #FDFBF7 0%, #FDFBF7 45%, #dec5a8 100%);
   color: saddlebrown;
   place-items: center;
   padding:5rem 2rem 2rem 2rem;
@@ -84,7 +84,7 @@ main {
   width: 100%;
   max-width: 1100px;
   background: linear-gradient(snow, whitesmoke);
-  box-shadow: 0 24px 60px saddlebrown;
+  box-shadow: 0 15px 60px saddlebrown;
 }
 
 /*Estilização da logotipo completa, a que está dentro do main*/
@@ -103,7 +103,7 @@ header h1{
   line-height: 1.05;
   margin-bottom: 1rem;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  color: sienna;
+  color: #4A2E1B;
 }
 
 /*Estilização do slogan da logo*/
@@ -112,7 +112,7 @@ header p {
   font-size: 2rem;
   margin: 1.5rem 1rem 0rem 1rem;
   line-height: 1.85;
-  color: sienna;
+  color: #4A2E1B;
   letter-spacing: 0.08em;
   padding: 1rem 4rem 1rem 4rem;
 }
@@ -122,14 +122,16 @@ header p {
 .Logotipo{
   display: flex;
   justify-content: center;
+  mix-blend-mode: multiply;
   gap: 5rem;
 }
 
 /*Logotipo*/
 
 #imagem1{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: multiply;
 }
 
 /*Fundo e posicionamento interno das divs que comportam imagens*/
@@ -188,7 +190,7 @@ article {
 
 article h2 {
   margin-bottom: 0.75rem;
-  color: sienna;
+  color: #806150;
   font-size: 2.5rem;
   letter-spacing: 0.08em;
 }
