@@ -105,11 +105,11 @@ body {
 
 /*Estilização do conteúdo principal, a seção central ao meio do body*/
 
-main {
+main, header {
   width: 100%;
   max-width: 1100px;
   background: linear-gradient(snow, whitesmoke);
-  box-shadow: 0 15px 60px saddlebrown;
+    box-shadow: 0 15px 60px saddlebrown;
 }
 
 /*Estilização da logotipo completa, a que está dentro do main*/
