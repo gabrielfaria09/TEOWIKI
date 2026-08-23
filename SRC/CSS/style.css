@@ -5,6 +5,11 @@ html{
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
 /*Estilização da barra de navegação principal*/
 
 nav{
@@ -12,22 +17,35 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  height: 64px;
+  min-height: 64px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  background: linear-gradient(to right, #3b2416, #7a4b2b);
-  box-shadow: 0px 10px 60px  #D4AF37;
+  gap: 0.75rem;
+  background: #2f1b10;
+  box-shadow: 0 8px 24px rgba(74, 46, 27, 0.35);
 }
 
 /*Estilização dos links da barra de navegação e dos demais links*/
 
 nav a:link,nav a:visited, aside a:link, aside a:visited, .Conteúdo a:link, .Conteúdo a:visited, .Complementos a:link, .Complementos a:visited {
-  color: #F5E6D3;
+  color: #fff8ed;
   text-decoration:none;
+  text-shadow: none;
   letter-spacing: 0.2rem;
-  text-shadow: 2px 2px #D4AF37;
+  text-shadow: 1px 1px #D4AF37;
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.35rem;
+}
+
+nav a:hover,
+aside a:hover,
+.Conteúdo a:hover,
+.Complementos a:hover,
+.Artigos a:hover {
+  background: rgba(212, 175, 55, 0.18);
+  text-shadow: none;
 }
 
 /*Estilização da logotipo presente na barra de navegação*/
@@ -50,13 +68,20 @@ aside{
   top: 64px;
   left: 0;
   width: 100%;
-  height: 20px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  background-color: #422606;
+  gap: 0.75rem;
+  background-color: #1f120b;
+  box-shadow: 0 8px 20px rgba(74, 46, 27, 0.25);
   color: #f7efe6;
+}
+
+nav,
+aside {
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
 }
 
 /*Estilização dos links presentes no corpo da página*/
@@ -138,11 +163,13 @@ header p {
 
 figure{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   background: linear-gradient(to right, #3b2416, #7a4b2b);
   padding: 20px;
   border-radius:1rem;
+  gap: 1rem;
 }
 
 /*Bordas e transições de largura das imagens*/
@@ -153,12 +180,13 @@ figure img{
   width: 300px;
   height: 300px;
   transition: width 2s;
+  object-fit: cover;
 }
 
 /*Transição passando o mouse*/
 
-figure img:hover{
-   width: 500px;
+figure img:hover {
+  width: 360px;
 }
 
 /*Legenda das imagens*/
@@ -277,4 +305,129 @@ footer{
   justify-content: center;
   gap: 3rem;
   font-size: 1.25rem;
+}
+
+/*Acessibilidade e responsividade ao focus (uso do tab)*/
+
+a:focus-visible,
+button:focus-visible,
+img:focus-visible {
+  outline: 3px solid #0b5fff;
+  outline-offset: 4px;
+  border-radius: 0.35rem;
+}
+
+/*Responsividade em telas menores*/
+
+@media (max-width: 900px) {
+  body {
+    padding: 7.5rem 1rem 1.5rem 1rem;
+  }
+  aside {
+    top: 98px;
+  }
+
+  .Título {
+    position: static;
+    width: 100%;
+  }
+
+  .Título h1 {
+    margin: 0;
+  }
+
+  nav a,
+  aside a {
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 2.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.14em;
+  }
+
+  header p {
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 1rem 0 0;
+  }
+
+  .Logotipo,
+  .Contatos,
+  .Complementos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  article,
+  .Artigos {
+    padding: 2rem 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  article h2 {
+    font-size: 2rem;
+  }
+
+  article p,
+  #Lista {
+    font-size: 1.15rem;
+  }
+
+  #Lista {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 7.5rem 0.5rem 1rem 0.5rem;
+  }
+
+  nav,
+  aside {
+    gap: 0.35rem;
+    padding: 0.45rem;
+  }
+
+  aside {
+    top: 120px;
+  }
+
+  nav a,
+  aside a {
+    font-size: 0.78rem;
+    letter-spacing: 0;
+  }
+
+  section {
+    padding: 1rem 0.75rem 2rem;
+  }
+
+  header h1 {
+    font-size: 2.25rem;
+  }
+
+  #imagem1 {
+    width: 140px;
+    height: 140px;
+  }
+
+  figure {
+    padding: 0.75rem;
+  }
+
+  .Conteúdo a:link,
+  .Conteúdo a:visited,
+  .Complementos,
+  .Artigos {
+    font-size: 1.2rem;
+  }
 }
