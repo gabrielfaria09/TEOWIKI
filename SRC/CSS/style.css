@@ -94,6 +94,12 @@ aside{
   color: #f7efe6;
 }
 
+aside a.ativo {
+  background: rgba(212, 175, 55, 0.4); /* Usa a cor dourada do seu tema para destacar */
+  text-shadow: none;
+  font-weight: bold;
+}
+
 nav,
 aside {
   padding: 0.5rem 1rem;
