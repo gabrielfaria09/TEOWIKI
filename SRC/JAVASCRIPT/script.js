@@ -27,3 +27,16 @@ const observer = new IntersectionObserver(entries => {
 }, { rootMargin: "-10% 0px -70% 0px" });
 
 document.querySelectorAll('article[id]').forEach(artigo => observer.observe(artigo));
+
+const botao = document.getElementById("tema");
+
+botao.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    botao.textContent = "Tema Claro";
+  }
+  else{
+    botao.textContent = "Tema escuro";
+  }
+});

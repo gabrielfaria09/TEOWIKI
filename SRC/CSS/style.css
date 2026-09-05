@@ -1,3 +1,64 @@
+/* ==========================================
+   TEMA ESCURO (Sobrescrevendo as cores padrão)
+   ========================================== */
+
+/* Fundo da página */
+body.dark-mode {
+  background: linear-gradient(#100a06 0%, #170e08 45%, #26160d 100%);
+  color: #f2e3d5;
+}
+
+/* Cartão principal e cabeçalho */
+body.dark-mode main,
+body.dark-mode header {
+  background: linear-gradient(#1f120b, #190e08);
+  box-shadow: 0 15px 60px #000000;
+}
+
+/* Título e slogan do cabeçalho */
+body.dark-mode header h1,
+body.dark-mode header p {
+  color: #dcb386;
+}
+
+/* Artigos/Blocos de conteúdo */
+body.dark-mode article,
+body.dark-mode .Artigos {
+  background: #2a190e;
+  box-shadow: 0 16px 32px #120a05;
+}
+
+body.dark-mode article h2 {
+  color: #dcb386;
+}
+
+body.dark-mode article p {
+  color: #f2e3d5;
+}
+
+/* Barra de navegação superior */
+body.dark-mode nav {
+  background: #120a05;
+}
+
+
+/* Botão de mudar tema */
+#tema {
+  background: transparent;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+#tema:hover {
+  background: #D4AF37;
+  color: #2f1b10;
+}
+
 /*Definições universais de fonte e tipo de rolagem*/
 
 html{
@@ -73,6 +134,7 @@ aside a:hover,
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   color: #D4AF37;
 }
