@@ -337,10 +337,10 @@ footer{
   justify-content: center;
   align-items: center;
   background: antiquewhite;
-  border:0.5rem solid sienna;
+  border: 1px solid #dcb386;
   border-radius: 1.5rem;
   padding: 4rem;
-  box-shadow: 0 32px 64px saddlebrown;
+  box-shadow: 0 4px 16px rgba(74, 46, 27, 0.1);
   font-size: 2rem;
 }
 
