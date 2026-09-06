@@ -45,7 +45,7 @@ nav{
 
 /*Estilização dos links da barra de navegação e dos demais links*/
 
-nav a:link,nav a:visited, aside a:link, aside a:visited, .Conteúdo a:link, .Conteúdo a:visited, .Complementos a:link, .Complementos a:visited {
+nav a:link,nav a:visited, aside a:link, aside a:visited, .Conteúdo a:link, .Conteúdo a:visited {
   color: #fff8ed;
   text-decoration:none;
   text-shadow: none;
@@ -53,6 +53,13 @@ nav a:link,nav a:visited, aside a:link, aside a:visited, .Conteúdo a:link, .Con
   text-shadow: 1px 1px #D4AF37;
   padding: 0.35rem 0.55rem;
   border-radius: 0.35rem;
+}
+
+.Complementos a:link, .Complementos a:visited{
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  color: saddlebrown;
+  text-shadow: 1px 1px #D4AF37;
 }
 
 nav a:hover,
@@ -380,7 +387,7 @@ img:focus-visible {
 
 /*Responsividade em telas menores*/
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   body {
     padding: 7.5rem 1rem 1.5rem 1rem;
   }
@@ -391,6 +398,8 @@ img:focus-visible {
   .Título {
     position: static;
     width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .Título h1 {
@@ -447,7 +456,7 @@ img:focus-visible {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 767px) {
   body {
     padding: 7.5rem 0.5rem 1rem 0.5rem;
   }
@@ -464,8 +473,18 @@ img:focus-visible {
 
   nav a,
   aside a {
-    font-size: 0.78rem;
+    font-size: 0.5rem;
     letter-spacing: 0;
+  }
+
+  .Título{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #tema {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
   }
 
   section {
@@ -485,11 +504,23 @@ img:focus-visible {
     padding: 0.75rem;
   }
 
+  img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+  }
+
   .Conteúdo a:link,
   .Conteúdo a:visited,
   .Complementos,
   .Artigos {
     font-size: 1.2rem;
+  }
+
+  footer{
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 
