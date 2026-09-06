@@ -243,7 +243,7 @@ figure img:hover {
   text-decoration: underline;
 }
 
-/*Botão flutuante WhatsApp*/
+/*Botão flutuante WhatsApp, e botões fixos*/
 
 #compartilhar{
   position: fixed;
@@ -259,6 +259,16 @@ figure img:hover {
 
 #compartilhar img:hover{
   transform: scale(1.1);
+}
+
+#whatFixo{
+  height: 50px;
+  width: 50px;
+}
+
+#insta{
+  height: 50px;
+  width: 50px;
 }
 
 /*Seção que comporta os articles, que subdividem a página*/
@@ -368,11 +378,6 @@ footer{
   justify-content: center;
   gap: 3rem;
   font-size: 1.25rem;
-}
-
-#fale{
-  text-decoration: none;
-  color: saddlebrown;
 }
 
 /*Acessibilidade e responsividade ao focus (uso do tab)*/
