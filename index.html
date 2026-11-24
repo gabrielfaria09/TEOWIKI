@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -111,4 +111,282 @@
   <script src="SRC/JAVASCRIPT/destaqueAside.js"></script>
   <script src="SRC/JAVASCRIPT/mudarTema.js"></script>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TEOWIKI | Sabedoria e conhecimento</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="SRC/CSS/index.css">
+
+  <link rel="icon" href="SRC/ASSETS/Images/Imagem_1.png" type="image/png">
+</head>
+
+<body class="home-page">
+
+  <!-- Barra de progresso -->
+  <div id="ProgressBar">
+    <div id="RealProgress"></div>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="site-header text-center">
+    <div class="container">
+      <div class="brand d-flex align-items-center justify-content-center gap-4 flex-wrap">
+        <h1 class="m-0">TEOWIKI</h1>
+
+        <img
+          src="SRC/ASSETS/Images/Imagem_1.png"
+          id="imagem1"
+          alt="Logotipo da TEOWIKI"
+        >
+      </div>
+
+      <p class="site-slogan">
+        Sabedoria, transparência e profissionalismo
+      </p>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">TEOWIKI</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre nós</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#missao">Minha missão</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+            <button id="tema" type="button" class="theme-button">
+              Mudar tema
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Conteúdo principal -->
+    <section class="home-content container py-5">
+
+      <!-- Sobre -->
+      <article id="sobre" class="home-card">
+        <div class="row align-items-center g-4">
+
+          <div class="col-lg-7">
+            <span class="section-label">APRESENTAÇÃO</span>
+
+            <h2>Quem sou</h2>
+
+            <p>
+              Sou um estudante de Ciência da Computação, apaixonado por teologia
+              e filosofia. Com uma mente curiosa e um coração dedicado, busco
+              compreender as complexidades do universo e da existência humana.
+              Minha jornada é guiada pela busca incessante por conhecimento e
+              pela vontade de compartilhar insights que possam inspirar outros
+              a refletirem sobre o significado da vida e a natureza do divino.
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="image-gallery">
+              <img
+                src="SRC/ASSETS/Images/Imagem 2 index.webp"
+                alt="Trabalho artístico produzido por aluno"
+                class="img-fluid"
+              >
+
+              <img
+                src="SRC/ASSETS/Images/imagem 3 index.jpg"
+                alt="Trabalho artístico produzido por aluno"
+                class="img-fluid"
+              >
+            </div>
+
+            <p class="image-caption">
+              Trabalhos artísticos feitos pelos meus alunos
+            </p>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Missão -->
+      <article id="missao" class="home-card">
+        <div class="row align-items-center">
+          <div class="col-lg-9 mx-auto text-center">
+
+            <span class="section-label">PROPÓSITO</span>
+
+            <h2>Minha missão</h2>
+
+            <p>
+              Minha missão é, através do compartilhamento do meu estudo sobre
+              teologia, encontrar conexões profundas e inspirar outros a
+              refletirem e buscarem com igual anseio a relação entre a razão
+              e a fé, explorando as questões fundamentais da vida e do propósito.
+            </p>
+
+            <div class="decorative-line"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Serviços -->
+      <article id="servicos" class="home-card">
+        <div class="row align-items-center g-4">
+
+          <div class="col-lg-7">
+            <span class="section-label">CONTEÚDO E PESQUISA</span>
+
+            <h2>Serviços</h2>
+
+            <p>
+              Meu trabalho consiste em pesquisar fontes confiáveis para estudo
+              da teologia, compactando-as e redigindo artigos simples e diretos
+              que despertem o interesse do público por tal área. Caso tenha
+              interesse em saber mais sobre meu serviço, entre em contato pelos
+              contatos dessa página, ou veja uma prévia com três de meus artigos:
+            </p>
+
+            <a href="SRC/PAGES/Serviços.html" class="articles-link">
+              Explorar prévia dos artigos
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="image-gallery">
+              <img
+                src="SRC/ASSETS/Images/Imagem 4 index.jpg"
+                alt="Fonte de pesquisa usada nos artigos"
+                class="img-fluid"
+              >
+
+              <img
+                src="SRC/ASSETS/Images/Imagem 5 index.jpg"
+                alt="Fonte de pesquisa usada nos artigos"
+                class="img-fluid"
+              >
+            </div>
+
+            <p class="image-caption">
+              Fontes de pesquisa usadas em meus artigos
+            </p>
+          </div>
+
+        </div>
+      </article>
+
+    </section>
+
+    <div class="decorative-line"></div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contato" class="site-footer text-center py-5">
+
+    <div class="container">
+
+      <h2>Contato</h2>
+
+      <div class="social-links d-flex justify-content-center gap-4 my-4">
+
+        <a href="https://wa.me/11111111" target="_blank" rel="noopener noreferrer">
+          <img
+            src="SRC/ASSETS/Images/WhatsApp.png"
+            id="whatFixo"
+            alt="WhatsApp"
+          >
+        </a>
+
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img
+            src="SRC/ASSETS/Images/Instagram.png"
+            id="insta"
+            alt="Instagram"
+          >
+        </a>
+
+      </div>
+
+      <p>Todos os direitos reservados © TEOWIKI</p>
+
+      <p>
+        Desenvolvido por <strong>Gabriel Alves Faria</strong>
+      </p>
+
+      <p class="footer-note">
+        Os conteúdos usados para redigir os artigos e algumas imagens
+        tiveram auxílio de IA.
+      </p>
+
+      <small>© 2026</small>
+
+    </div>
+  </footer>
+
+  <!-- Atalho flutuante do WhatsApp -->
+  <a
+    href="https://wa.me/11111111"
+    target="_blank"
+    rel="noopener noreferrer"
+    id="compartilhar"
+    aria-label="Entrar em contato pelo WhatsApp"
+  >
+    <img src="SRC/ASSETS/Images/WhatsApp.png" alt="">
+  </a>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts originais -->
+  <script src="SRC/JAVASCRIPT/mudarTema.js"></script>
+  <script src="SRC/JAVASCRIPT/scroll.js"></script>
+
+</body>
 </html>
+
