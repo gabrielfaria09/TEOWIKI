@@ -1,185 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEOWIKI</title>
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <link rel="icon" href="/SRC/ASSETS/Images/Imagem_1.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TEOWIKI | O que é Teologia</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Único CSS próprio desta página -->
+  <link rel="stylesheet" href="../CSS/indexArticles.css">
+
+  <link
+    rel="icon"
+    href="../ASSETS/Images/Imagem_1.png"
+    type="image/png"
+  >
 </head>
+
 <body>
 
-
+  <!-- Barra de progresso -->
   <div id="ProgressBar">
     <div id="RealProgress"></div>
   </div>
-    <header>
-      <div id="-VOLTAR AO TOPO-" class="Logotipo">
-      <h1>TEOWIKI</h1>
-      <img src="../ASSETS/Images/Imagem_1.png" id="imagem1" alt="Logotipo da TEOWIKI">
+
+  <!-- Cabeçalho -->
+  <header class="site-header text-center py-4" id="topo">
+    <div class="container">
+
+      <div class="brand d-flex justify-content-center align-items-center gap-3 flex-wrap">
+        <h1>TEOWIKI</h1>
+
+        <img
+          src="../ASSETS/Images/Imagem_1.png"
+          alt="Logotipo TEOWIKI"
+        >
       </div>
+
       <p>Sabedoria, transparência e profissionalismo</p>
-    </header>
-  <main>
 
-     <nav>
-      <div class="Título">
-      <h1>TEOWIKI</h1>
-      <button id="tema">Mudar tema</button>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="../../index.html">
+        TEOWIKI
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-label="Abrir navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#topo">Voltar ao topo</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Serviços.html">Artigos</a>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+            <button id="tema" type="button">
+              Mudar tema
+            </button>
+          </li>
+
+        </ul>
+
       </div>
-      <a href="#-VOLTAR AO TOPO-">-VOLTAR AO TOPO-</a>
-      <a href="#-CONTATO-">-CONTATO-</a>
-      <a href="Serviços.html">-PÁGINA ANTERIOR-</a>
-    </nav>
-    <aside>
-      <a href="#-definicao-">-DEFINIÇÃO-</a>
-      <a href="#-origem-">-ORIGEM-</a>
-      <a href="#-curiosidades-">-CURIOSIDADES-</a>
-      <a href="#-subdivisoes-">-SUBDIVISÕES-</a>
-    </aside>
+    </div>
+  </nav>
 
-    <section>
-      <article id="-definicao-" class="Conteúdo">
-        <h2>O que é teologia</h2>
-        <p>
-            A palavra teologia tem origem no grego antigo, sendo a junção de dois termos:
-           theos (Deus) e logos (estudo, palavra, razão). Em seu sentido mais literal,
-           teologia significa o estudo sobre Deus ou o discurso racional sobre o divino.
-        </p>
-        <figure>
-          <img src="../ASSETS/Images/Imagem 2 Teologia.png" alt="Representação da variedade de crenças religiosas">
-          <img src="../ASSETS/Images/Imagem 3 Teologia.webp" alt="Representação de pecados em contexto religioso">
-        </figure>
-        <p id="Legenda">Variedade de crenças religiosas e tipos de pecados envolvidos nelas</p>
-        <p>
-            No entanto, o conceito vai muito além de tentar "explicar" uma divindade. A teologia
-            é a investigação sistemática e rigorosa das crenças religiosas, das escrituras
-            sagradas, da tradição, da moral e da experiência humana com o sagrado. Ela busca 
-            compreender como o divino se relaciona com o universo e com a humanidade.
-        </p>
-        <figure>
-          <img src="../ASSETS/Images/Imagem 4 Teologia.png" id="imagem4" alt="A Criação de Adão, de Michelangelo">
-        </figure>
-        <p id="Legenda">Famosa imagem de Michelangelo que evidencia a visão renascentista da relação entre Deus e o homem</p>
-      </article>
+  <!-- Conteúdo -->
+  <main class="container my-5">
 
-      <article id="-origem-" class="Conteúdo">
-        <h2>Origem da Teologia</h2>
-        <p>
-          Embora hoje o termo esteja fortemente ligado às religiões abraâmicas
-          (como o Cristianismo, o Judaísmo e o Islamismo), o conceito nasceu no
-          contexto da Grécia Antiga.
-        </p>
-        <div id="Lista">
-        <li>
-          <strong> Poetas e os Mitos</strong>: Os primeiros a usarem termos semelhantes foram poetas
-          como Homero e Hesíodo, que narravam as histórias dos deuses do Olimpo.
-        </li>
-        <li>
-          <strong> Filosofia Grega</strong>: Platão e Aristóteles transformaram o termo. Em sua obra A República,
-          Platão usou "teologia" para se referir à interpretação correta e filosófica dos mitos.
-          Já Aristóteles dividiu a filosofia teórica em três partes: matemática, física e teológica 
-          (que ele considerava a "filosofia primeira", o estudo do Ser Supremo ou da causa primeira
-          do universo).
-        </li>
-      </div>
-      </article>
+    <div class="row g-4">
 
-      <article id="-curiosidades-" class="Conteúdo">
-        <h2> A Escolástica: A Teologia como Ciência</h2>
-        <p>
-          Durante a Idade Média, a teologia atingiu o seu ápice acadêmico com o movimento chamado Escolástica (séculos XI ao XIV).
-          As primeiras universidades da Europa ocidental foram fundadas e a teologia era considerada a "Rainha das Ciências"
-          (Regina Scientiarum).
-          O maior nome desse período foi Tomás de Aquino. Em sua obra-prima, a Summa Theologiae, Aquino utilizou a filosofia
-          de Aristóteles para criar um sistema lógico que harmonizava a fé cristã com a razão humana. Ele defendia que a razão
-          e a revelação divina não se contradizem, mas se completam.
-        </p>
-        <figure>
-          <img src="../ASSETS/Images/Imagem 5 Teologia.webp" alt="Retrato de Tomás de Aquino">
-        </figure>
-        <p id="Legenda">Tomás de Aquino, o maior nome da Escolástica, que harmonizou a fé cristã com a razão humana</p>
-        <P>
-          A Escolástica estabeleceu as bases para a teologia como disciplina acadêmica, influenciando não apenas o pensamento
-          religioso, mas também a filosofia, a ética e a ciência. O método escolástico de questionamento e debate ainda é
-          utilizado em muitas instituições de ensino teológico até hoje.
-        </P>
+      <!-- Sumário lateral -->
+      <aside class="col-lg-3">
 
-        <H2>A Reforma Protestante e a Modernidade</H2>
-        <P>
-          No século XVI, a Reforma Protestante, liderada por figuras como Martinho Lutero e João Calvino, desafiou a autoridade
-          da Igreja Católica e trouxe novas perspectivas teológicas. A ênfase na leitura direta das Escrituras e na fé pessoal
-          levou à diversificação das tradições cristãs e ao surgimento de inúmeras denominações protestantes.
-          Na era moderna, a teologia continuou a evoluir, incorporando insights de outras disciplinas como a psicologia, a sociologia
-          e as ciências naturais. O diálogo inter-religioso também se tornou uma área importante de estudo teológico, promovendo a compreensão
-          entre diferentes tradições religiosas.
-        </P>
-        <figure>
-          <img src="../ASSETS/Images/Imagem 6 Teologia.png" alt="Retrato de Martinho Lutero">
-        </figure>
-        <p id="Legenda">Lutero, pioneiro e um dos autores da reforma protestante</p>
-      </article>
+        <div class="table-of-contents">
 
-      <article id="-subdivisoes-" class="Conteúdo">
-        <h2>Subdivisões da Teologia</h2>
-        <p>
-          Hoje, a teologia é um campo acadêmico vasto e plural, geralmente dividido
-          em quatro grandes áreas para fins de estudo:
-        </p>
+          <h2> Neste artigo </h2>
 
-        <div id="Lista">
-        <li>
-          <strong>Teologia Bíblica</strong>: Dedica-se ao estudo dos textos sagrados, analisando
-          o contexto histórico, as línguas originais (hebraico, aramaico e grego)
-          e a evolução das ideias ao longo da Bíblia.
-        </li>
-        <li>
-          <strong>Teologia Sistemática (ou Dogmática)</strong>: Organiza as crenças e doutrinas de forma
-          lógica e estruturada (por exemplo: o estudo sobre a criação, a salvação, o fim
-          dos tempos, etc.).
-        </li>
-        <li>
-          <strong>Teologia Histórica</strong>: Investiga como as doutrinas e o pensamento religioso evoluíram
-          ao longo dos séculos, desde a antiguidade até os dias atuais.
-        </li>
-        <li>
-          <strong>Teologia Prática (ou Pastoral)</strong>: Foca na aplicação dos conceitos teológicos
-          no dia a dia das comunidades, englobando a ética, a liturgia, o aconselhamento
-          e a ação social.
-        </li>
-      </div>
-      </article>
+          <a href="#definicao">O que é teologia</a>
+          <a href="#origem">Origem da Teologia</a>
+          <a href="#escolastica">A Escolástica</a>
+          <a href="#reforma">Reforma e Modernidade</a>
+          <a href="#subdivisoes">Subdivisões</a>
 
+        </div>
 
-      <div class="Barradecorativa"></div>
-    </section>
+      </aside>
 
-    <footer id="-CONTATO-">
-      <h2>Contato:</h2>
-      <div class="Contatos">
-        <p><a href="https://wa.me/11111111" target="_blank"><img src="/SRC/ASSETS/Images/WhatsApp.png" id="whatFixo"></a></p>
-        <p><a href="https://instagram.com" target="_blank"><img src="/SRC/ASSETS/Images/Instagram.png" id="insta"></a></p>
-      </div>
-      <div class="Contatos">
-        <p>
-          Todos os direitos reservados &copy;
-        </p>
-        <p>
-          TEOWIKI
-        </p>
-        <p>
-          Desenvolvido por <strong>Gabriel Alves Faria</strong>
-        </p>
-      </div>
-      <div class="Contatos">
-        <p>Os conteúdos usados para redigir os artigos e algumas imagens tiveram auxílio de IA</p>
-      </div>
-      <p>&copy; 2026</p>
-    </footer>
-    <a href="https://wa.me/11111111" target="_blank" id="compartilhar"><img src="/SRC/ASSETS/Images/WhatsApp.png"></a>
+      <!-- Artigo gerado pelo Marked -->
+      <section class="col-lg-9">
+
+        <article class="article-container">
+
+          <div class="article-header">
+            <span>TEOLOGIA</span>
+            <h2>O que é teologia?</h2>
+            <p>Conheça a origem, a evolução e as principais áreas da teologia.</p>
+          </div>
+
+          <div id="conteudo-artigo" class="markdown-content">
+            <p class="text-center">Carregando artigo...</p>
+          </div>
+
+        </article>
+
+      </section>
+
+    </div>
   </main>
-  <script src="/SRC/JAVASCRIPT/scroll.js"></script>
-  <script src="/SRC/JAVASCRIPT/destaqueAside.js"></script>
-  <script src="/SRC/JAVASCRIPT/mudarTema.js"></script>
+
+  <!-- Rodapé -->
+  <footer id="contato" class="site-footer text-center py-5">
+
+    <div class="container">
+
+      <h2>Contato</h2>
+
+      <div class="d-flex justify-content-center gap-4 my-4">
+
+        <a href="https://wa.me/11111111" target="_blank" rel="noopener noreferrer">
+          <img src="../ASSETS/Images/WhatsApp.png" alt="WhatsApp">
+        </a>
+
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="../ASSETS/Images/Instagram.png" alt="Instagram">
+        </a>
+
+      </div>
+
+      <p>Todos os direitos reservados © TEOWIKI</p>
+      <p>Desenvolvido por <strong>Gabriel Alves Faria</strong></p>
+      <small>Os conteúdos e algumas imagens tiveram auxílio de IA.</small>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Sanitização do HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+
+  <!-- Scripts próprios -->
+  <script>
+    async function carregarArtigo() {
+
+      const area = document.getElementById("conteudo-artigo");
+
+      try {
+
+        const resposta = await fetch("../ARTICLES/teologia.md");
+
+        if (!resposta.ok) {
+          throw new Error("Não foi possível carregar o artigo.");
+        }
+
+        const markdown = await resposta.text();
+
+        const html = marked.parse(markdown);
+
+        area.innerHTML = DOMPurify.sanitize(html);
+
+        // IDs para navegação pelo sumário
+        const secoes = {
+          "O que é teologia": "definicao",
+          "Origem da Teologia": "origem",
+          "A Escolástica: A Teologia como Ciência": "escolastica",
+          "A Reforma Protestante e a Modernidade": "reforma",
+          "Subdivisões da Teologia": "subdivisoes"
+        };
+
+        area.querySelectorAll("h1, h2, h3").forEach(titulo => {
+
+          const texto = titulo.textContent.trim();
+
+          if (secoes[texto]) {
+            titulo.id = secoes[texto];
+          }
+
+        });
+
+      } catch (erro) {
+
+        area.innerHTML = `
+          <p class="error-message">
+            Não foi possível carregar o artigo. Verifique o arquivo Markdown.
+          </p>
+        `;
+
+        console.error(erro);
+      }
+    }
+
+    carregarArtigo();
+
+  </script>
+
+  <script src="../JAVASCRIPT/scroll.js"></script>
+  <script src="../JAVASCRIPT/mudarTema.js"></script>
+
 </body>
 </html>
+
