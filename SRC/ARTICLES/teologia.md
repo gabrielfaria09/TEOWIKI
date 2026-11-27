@@ -5,13 +5,13 @@ A palavra teologia tem origem no grego antigo, sendo a junção de dois termos: 
 
 No entanto, o conceito vai muito além de tentar "explicar" uma divindade. A teologia é a investigação sistemática e rigorosa das crenças religiosas, das escrituras sagradas, da tradição, da moral e da experiência humana com o sagrado. Ela busca compreender como o divino se relaciona com o universo e com a humanidade.
 
-![Representação da variedade de crenças religiosas](../ASSETS/Images/Imagem 2 Teologia.png)
+![Representação da variedade de crenças religiosas](../ASSETS/Images/imagem_2_teologia.png)
 
-![Representação de pecados em contexto religioso](../ASSETS/Images/Imagem 3 Teologia.webp)
+![Representação de pecados em contexto religioso](../ASSETS/Images/imagem_3_teologia.webp)
 
 *Variedade de crenças religiosas e tipos de pecados envolvidos nelas.*
 
-![A Criação de Adão, de Michelangelo](../ASSETS/Images/Imagem 4 Teologia.png)
+![A Criação de Adão, de Michelangelo](../ASSETS/Images/imagem_4_teologia.png)
 
 *Famosa imagem de Michelangelo que evidencia a visão renascentista da relação entre Deus e o homem.*
 
@@ -33,7 +33,7 @@ Durante a Idade Média, a teologia atingiu o seu ápice acadêmico com o movimen
 
 O maior nome desse período foi Tomás de Aquino. Em sua obra-prima, a *Summa Theologiae*, Aquino utilizou a filosofia de Aristóteles para criar um sistema lógico que harmonizava a fé cristã com a razão humana. Ele defendia que a razão e a revelação divina não se contradizem, mas se completam.
 
-![Tomás de Aquino](../ASSETS/Images/Imagem 5 Teologia.webp)
+![Tomás de Aquino](../ASSETS/Images/imagem_5_teologia.webp)
 
 *Tomás de Aquino, o maior nome da Escolástica, que harmonizou a fé cristã com a razão humana.*
 
@@ -45,7 +45,7 @@ No século XVI, a Reforma Protestante, liderada por figuras como Martinho Lutero
 
 Na era moderna, a teologia continuou a evoluir, incorporando insights de outras disciplinas como a psicologia, a sociologia e as ciências naturais. O diálogo inter-religioso também se tornou uma área importante de estudo teológico, promovendo a compreensão entre diferentes tradições religiosas.
 
-![Martinho Lutero](../ASSETS/Images/Imagem 6 Teologia.png)
+![Martinho Lutero](../ASSETS/Images/imagem_6_teologia.png)
 
 *Lutero, pioneiro e um dos autores da Reforma Protestante.*
 
